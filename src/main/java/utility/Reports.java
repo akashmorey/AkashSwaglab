@@ -6,11 +6,11 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class Reports {
 public static ExtentReports createReports() {
 		
-		ExtentSparkReporter htmlReports = new ExtentSparkReporter("extentReports.html");
+		ExtentSparkReporter htmlReports = new ExtentSparkReporter("SwagLab Test Result");
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(htmlReports);
-		extent.setSystemInfo("Facebook", "RegressionTest");
-		extent.setSystemInfo("Tested By", "Subodh");
+		extent.setSystemInfo("SwagLab", "RegressionTest");
+		extent.setSystemInfo("Tested By", "Akash");
 		return extent;
 	}
 }

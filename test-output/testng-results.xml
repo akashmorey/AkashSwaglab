@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-12T11:42:01 IST" name="Default suite" finished-at="2023-09-12T11:42:10 IST" duration-ms="9280">
+  <suite started-at="2023-09-12T18:39:10 IST" name="Default suite" finished-at="2023-09-12T18:39:13 IST" duration-ms="2778">
     <groups>
     </groups>
-    <test started-at="2023-09-12T11:42:01 IST" name="Default test" finished-at="2023-09-12T11:42:10 IST" duration-ms="9280">
-      <class name="test.CheckOutOverviewPageTest">
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:test.CheckOutOverviewPageTest@74235045]" started-at="2023-09-12T11:42:01 IST" name="openChrome" finished-at="2023-09-12T11:42:05 IST" duration-ms="4296" status="PASS">
+    <test started-at="2023-09-12T18:39:10 IST" name="Default test" finished-at="2023-09-12T18:39:13 IST" duration-ms="2778">
+      <class name="test.LoginPageTest">
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:test.LoginPageTest@2d1ef81a]" started-at="2023-09-12T18:39:10 IST" name="openChrome" finished-at="2023-09-12T18:39:12 IST" duration-ms="2540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openChrome -->
-        <test-method signature="verifyProductPriceFromCheckOutOverViewPage()[pri:0, instance:test.CheckOutOverviewPageTest@74235045]" started-at="2023-09-12T11:42:05 IST" name="verifyProductPriceFromCheckOutOverViewPage" finished-at="2023-09-12T11:42:07 IST" duration-ms="1565" status="PASS">
+        <test-method signature="verifyUserIsAbleToLoginWith_locked_out_user()[pri:1, instance:test.LoginPageTest@2d1ef81a]" started-at="2023-09-12T18:39:12 IST" name="verifyUserIsAbleToLoginWith_locked_out_user" finished-at="2023-09-12T18:39:13 IST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductPriceFromCheckOutOverViewPage -->
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:test.CheckOutOverviewPageTest@74235045]" started-at="2023-09-12T11:42:07 IST" name="openChrome" finished-at="2023-09-12T11:42:09 IST" duration-ms="1740" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openChrome -->
-        <test-method signature="verifyUserIsAbleTofinishOrder()[pri:0, instance:test.CheckOutOverviewPageTest@74235045]" started-at="2023-09-12T11:42:09 IST" name="verifyUserIsAbleTofinishOrder" finished-at="2023-09-12T11:42:10 IST" duration-ms="1611" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbleTofinishOrder -->
-      </class> <!-- test.CheckOutOverviewPageTest -->
+        </test-method> <!-- verifyUserIsAbleToLoginWith_locked_out_user -->
+      </class> <!-- test.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

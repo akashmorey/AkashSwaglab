@@ -10,6 +10,7 @@ import pom.ProductDetailPage;
 import pom.ProductPage;
 
 public class CartPageTest extends BaseTest{
+	
 	@BeforeMethod
 	public void OpernChrome() {
 		driver=Browser.chrome();
@@ -29,7 +30,6 @@ public class CartPageTest extends BaseTest{
 		productDetailPage.clickOnCartButton();
 		String newUrl=driver.getCurrentUrl();
 		Assert.assertNotEquals(newUrl, url);
-		
 	}
 	@Test
 	public void verifyUserIsAbleToClickOnContinewShopping() {
@@ -53,38 +53,4 @@ public class CartPageTest extends BaseTest{
 		String url2=driver.getCurrentUrl();
 		Assert.assertNotEquals(url, url2);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//	@Test
-//	public void verifyUserIsAbleToSeeCorrectCartPriceFromProductDetailPage() {
-//		CartPageTest cartPageTest=new CartPageTest();
-//		cartPageTest.verifyUserIsAbleNavigateToCartPageFromProductDetailPage();
-//		
-//		CartPage cartPage=new CartPage(driver);
-//		ProductDetailPage productDetailPage=new ProductDetailPage(driver);
-//		cartPage.getProductPriceFromCartList();
-//		
-//		//Assert.assertNotEquals(cartPage.getProductPriceFromCartList(0),productDetailPage.getProductPrice());
-//		
-//	}
-	
-	
-	
-
 }

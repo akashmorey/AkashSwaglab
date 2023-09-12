@@ -1,11 +1,15 @@
 package test;
 
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import pojo.Browser;
 import pom.LoginPage;
+import utility.Parametrization;
 
 public class LoginPageTest extends BaseTest {
 	@BeforeMethod
@@ -13,11 +17,12 @@ public class LoginPageTest extends BaseTest {
 		driver=Browser.chrome();
 	}
 	@Test
-	public void verifyUserIsAbleToLoginWithStanderdUser() {			
+	public void verifyUserIsAbleToLoginWithStanderdUser() throws InterruptedException  {			
 		String url1=driver.getCurrentUrl();
 		LoginPage loginPage=new LoginPage(driver);
 		loginPage.enterUserNameField("standard_user");
 		loginPage.enterPasswordField("secret_sauce");
+		Thread.sleep(1000);
 		loginPage.clickOnLoginButton();								//Login Success
 		String url2=driver.getCurrentUrl();
 		Assert.assertNotEquals(url2, url1);
